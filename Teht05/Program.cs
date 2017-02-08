@@ -29,6 +29,7 @@ namespace Teht05
                 radio1.Frequency = input2;
 
             }
+
         }
     }
 }
