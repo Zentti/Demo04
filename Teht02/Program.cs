@@ -10,20 +10,19 @@ namespace Teht01
     {
         static void Main(string[] args)
         {
-            Amplifier hissi = new Amplifier();
+            Amplifier laite = new Amplifier();
             int input;
 
             while (true)
             {
-                // vaihda nämä
-                Console.WriteLine("Elevator is now in floor: " + hissi.Floor);
-                Console.WriteLine("Give a new floor number (1-5): ");
+                Console.WriteLine("Amplifier volume is set to: " + laite.Volume);
+                Console.WriteLine("Give a new volume value (0-100): ");
                 input = int.Parse(Console.ReadLine());
                 if (input == 0)
                 {
                     break;
                 }
-                hissi.Floor = input;
+                laite.Volume = input;
 
             }
         }

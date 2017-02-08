@@ -21,9 +21,15 @@ namespace Teht01
             set
             {
                 if (value >= minVol && value <= maxVol) volume = value;
-                else
+                else if (value > maxVol)
                 {
-                    Console.WriteLine("Invalid volume number");
+                    Console.WriteLine("Invalid volume number, volume is set to maximum!");
+                    volume = maxVol;
+                }
+                else if (value < minVol)
+                {
+                    Console.WriteLine("Invalid volume number, volume is set to mimimum!");
+                    volume = minVol;
                 }
             }
         }
